@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lulu.weichatsamplevideo.Main2Activity">
+
+    <SurfaceView
+        android:id="@+id/surfaceView1"
+        android:layout_width="320dp"
+        android:layout_height="160dp"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="buttonClick"
+            android:src="@mipmap/control_play"/>
+
+        <ImageButton
+            android:id="@+id/button_pause"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="buttonClick"
+            android:src="@mipmap/pause"/>
+
+        <ImageButton
+            android:id="@+id/button_stop"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="buttonClick"
+            android:src="@mipmap/stop"/>
+
+        <ImageButton
+            android:id="@+id/button_reset"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="buttonClick"
+            android:src="@mipmap/restart"/>
+    </LinearLayout>
+
+
+</LinearLayout>

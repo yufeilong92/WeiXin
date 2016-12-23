@@ -1,5 +1,6 @@
 package com.lulu.weichatsamplevideo;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.hardware.Camera;
 import android.media.AudioManager;
@@ -259,6 +260,10 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
                 mMediaRecorder.stop();
                 isRecording = false;
                 Toast.makeText(this, "视频已经放至" + mTargetFile.getAbsolutePath(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+
+                intent.putExtra("path",mTargetFile.getAbsolutePath());
+                startActivity(intent);
             }
         } catch (Exception e) {
             e.printStackTrace();
